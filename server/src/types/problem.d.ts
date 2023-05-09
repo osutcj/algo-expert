@@ -7,6 +7,9 @@ interface Problem {
   id: string;
   name: string;
   text: string;
-  testCases: File[];
+  testCases: {
+    input: File[];
+    output?: File[];
+  };
   checker: IChecker;
 }

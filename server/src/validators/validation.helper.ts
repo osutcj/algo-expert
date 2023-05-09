@@ -7,7 +7,6 @@ export const genericValidator = (
   response: Response,
   next: NextFunction,
 ) => {
-  console.log(request.body);
   const errors = validationResult(request);
 
   if (!errors.isEmpty()) {
